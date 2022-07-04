@@ -1,0 +1,14 @@
+==6637== Memcheck, a memory error detector
+==6637== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6637== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6637== Command: ../translator in/utype/input_1.s out/utype/output_1.s
+==6637== 
+==6637== 
+==6637== HEAP SUMMARY:
+==6637==     in use at exit: 0 bytes in 0 blocks
+==6637==   total heap usage: 7 allocs, 7 frees, 13,240 bytes allocated
+==6637== 
+==6637== All heap blocks were freed -- no leaks are possible
+==6637== 
+==6637== For lists of detected and suppressed errors, rerun with: -s
+==6637== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

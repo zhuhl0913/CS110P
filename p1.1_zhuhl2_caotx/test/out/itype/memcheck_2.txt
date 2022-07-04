@@ -1,0 +1,22 @@
+==6620== Memcheck, a memory error detector
+==6620== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6620== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6620== Command: ../translator in/itype/input_2.s out/itype/output_2.s
+==6620== 
+==6620== Invalid write of size 4
+==6620==    at 0x1095B4: translate (translator.c:92)
+==6620==    by 0x1097F6: main (translator.c:153)
+==6620==  Address 0x4a514c8 is 0 bytes after a block of size 8 alloc'd
+==6620==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6620==    by 0x109561: translate (translator.c:84)
+==6620==    by 0x1097F6: main (translator.c:153)
+==6620== 
+==6620== 
+==6620== HEAP SUMMARY:
+==6620==     in use at exit: 0 bytes in 0 blocks
+==6620==   total heap usage: 7 allocs, 7 frees, 13,248 bytes allocated
+==6620== 
+==6620== All heap blocks were freed -- no leaks are possible
+==6620== 
+==6620== For lists of detected and suppressed errors, rerun with: -s
+==6620== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
